@@ -1,17 +1,21 @@
 package com.shashikant.project.uber.uberApp.entities;
 
-import com.shashikant.project.uber.uberApp.dtos.DriverDto;
-import com.shashikant.project.uber.uberApp.dtos.RiderDto;
 import com.shashikant.project.uber.uberApp.entities.enums.PaymentMethod;
 import com.shashikant.project.uber.uberApp.entities.enums.RideRequestStatus;
 import com.shashikant.project.uber.uberApp.entities.enums.RideStatus;
 import jakarta.persistence.*;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.locationtech.jts.geom.Point;
 
 import java.time.LocalDateTime;
 
+
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Ride {
 
     @Id
@@ -19,7 +23,7 @@ public class Ride {
     private Long id;
 
     @Column(columnDefinition = "Geometry(Point, 4326)")
-    private Point pickupLocations;
+    private Point pickupLocation;
 
     @Column(columnDefinition = "Geometry(Point, 4326)")
     private Point dropOfLocation;

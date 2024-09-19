@@ -7,7 +7,6 @@ import com.shashikant.project.uber.uberApp.strategies.impl.RideFareSurgePricingF
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-
 import java.time.LocalTime;
 
 

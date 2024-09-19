@@ -1,6 +1,5 @@
 package com.shashikant.project.uber.uberApp.strategies.impl;
 
-import com.shashikant.project.uber.uberApp.dtos.RideRequestDto;
 import com.shashikant.project.uber.uberApp.entities.RideRequest;
 import com.shashikant.project.uber.uberApp.services.DistanceService;
 import com.shashikant.project.uber.uberApp.strategies.RideFareCalculationStrategy;
